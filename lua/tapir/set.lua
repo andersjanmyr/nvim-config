@@ -31,3 +31,21 @@ vim.opt.undodir=os.getenv("HOME") .. "/.vim/undo" -- where to put backup files
 vim.opt.shell="bash"
 vim.opt.splitbelow=true
 vim.opt.splitright=true
+vim.opt.textwidth=79
+vim.opt.tabstop=4
+vim.opt.softtabstop=4
+vim.opt.smarttab=true
+vim.opt.shiftwidth=4
+vim.opt.shortmess="atI" -- Use short messages to prevent press enter...
+vim.opt.smartcase=true -- Smart searching for capitalized words
+vim.opt.spell=true
+vim.opt.statusline="%<%f %h%m%r%{fugitive#statusline()}%=%-14.(%l,%c%V%) %P"
+vim.opt.visualbell=true
+vim.opt.wildmode="list:longest,full" --Magic completion menu--
+vim.opt.wrap=true
+-- vim.opt.tags:append(gems.tags)
+-- vim.opt.tags:append(libs.tags)
+-- vim.opt.tags:append(php.tags)
+-- vim.opt.runtimepath.append(os.getenv("HOME") .. "/.vim/bundle/ultisnip-snippets")
+vim.opt.autowrite=true
+vim.g.solarized_termcolors=256
