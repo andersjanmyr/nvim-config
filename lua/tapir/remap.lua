@@ -54,5 +54,6 @@ vim.keymap.set("x", "&", ":&&<cr>")
 
 -- TComment Options
 vim.keymap.set("n",  "<Leader>c", ":TComment<cr>")
+vim.keymap.set("v",  "<Leader>c", ":TComment<cr>")
 
 vim.keymap.set("n", "<leader>u", ":UndotreeToggle<cr>")
