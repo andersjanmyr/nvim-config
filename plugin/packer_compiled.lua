@@ -104,6 +104,11 @@ _G.packer_plugins = {
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/cmp_luasnip",
     url = "https://github.com/saadparwaiz1/cmp_luasnip"
   },
+  ["editorconfig-vim"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/editorconfig-vim",
+    url = "https://github.com/editorconfig/editorconfig-vim"
+  },
   ["friendly-snippets"] = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/friendly-snippets",
@@ -181,6 +186,11 @@ _G.packer_plugins = {
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-colors-solarized",
     url = "https://github.com/altercation/vim-colors-solarized"
   },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-css-color",
+    url = "https://github.com/ap/vim-css-color"
+  },
   ["vim-fugitive"] = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-fugitive",
@@ -190,6 +200,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
     url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-github-colorscheme"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-github-colorscheme",
+    url = "https://github.com/endel/vim-github-colorscheme"
   },
   ["vim-scratch"] = {
     loaded = true,

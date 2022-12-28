@@ -42,7 +42,11 @@ return require('packer').startup(function(use)
 			{'rafamadriz/friendly-snippets'},
 		}
 	}
-	use('andersjanmyr/vim-scratch')
 	use('AndrewRadev/sideways.vim')
 	use('airblade/vim-gitgutter')
+	use('andersjanmyr/vim-scratch')
+	use('ap/vim-css-color')
+	use('editorconfig/editorconfig-vim')
+	use('endel/vim-github-colorscheme')
+
 end)
