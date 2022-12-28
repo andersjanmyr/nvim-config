@@ -48,5 +48,8 @@ return require('packer').startup(function(use)
 	use('ap/vim-css-color')
 	use('editorconfig/editorconfig-vim')
 	use('endel/vim-github-colorscheme')
+    use('godlygeek/tabular')
+    use('hashivim/vim-terraform')
+    use('ray-x/go.nvim')
 
 end)
