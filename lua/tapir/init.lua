@@ -1,4 +1,5 @@
 require("tapir.packer")
 require("tapir.remap")
 require("tapir.set")
+require("tapir.auto")
 require('lualine').setup()
