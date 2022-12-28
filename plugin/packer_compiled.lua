@@ -160,6 +160,11 @@ _G.packer_plugins = {
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["sideways.vim"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/sideways.vim",
+    url = "https://github.com/AndrewRadev/sideways.vim"
+  },
   ["telescope.nvim"] = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/telescope.nvim",
@@ -180,6 +185,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-gitgutter"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-gitgutter",
+    url = "https://github.com/airblade/vim-gitgutter"
+  },
+  ["vim-scratch"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-scratch",
+    url = "https://github.com/andersjanmyr/vim-scratch"
   }
 }
 
