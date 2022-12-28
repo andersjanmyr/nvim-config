@@ -14,10 +14,6 @@ return require('packer').startup(function(use)
             vim.g.solarized_termcolors = 256
         end
     }
-    use {
-        'nvim-lualine/lualine.nvim',
-        requires = { 'kyazdani42/nvim-web-devicons', opt = true }
-    }
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
@@ -55,4 +51,17 @@ return require('packer').startup(function(use)
         'nvim-lualine/lualine.nvim',
         requires = { 'kyazdani42/nvim-web-devicons', opt = true }
     }
+    use('luochen1990/rainbow')
+    use('mattn/gist-vim')
+    use('mileszs/ack.vim')
+    use('phelipetls/vim-jqplay')
+    use('scrooloose/nerdtree')
+    use('ruanyl/vim-gh-line')
+    use('tomtom/tcomment_vim')
+    use('tpope/vim-eunuch')
+    use('tpope/vim-repeat')
+    use('tpope/vim-sexp-mappings-for-regular-people')
+    use('tpope/vim-sleuth')
+    use('tpope/vim-surround')
+    use('tpope/vim-unimpaired')
 end)
