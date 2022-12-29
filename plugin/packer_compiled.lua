@@ -129,6 +129,11 @@ _G.packer_plugins = {
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/go.nvim",
     url = "https://github.com/ray-x/go.nvim"
   },
+  ["guihua.lua"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/guihua.lua",
+    url = "https://github.com/ray-x/guihua.lua"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
