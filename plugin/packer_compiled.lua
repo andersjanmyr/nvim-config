@@ -169,6 +169,11 @@ _G.packer_plugins = {
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
+  },
   ["nvim-web-devicons"] = {
     loaded = false,
     needs_bufread = false,
@@ -189,11 +194,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/rainbow",
     url = "https://github.com/luochen1990/rainbow"
-  },
-  ["sideways.vim"] = {
-    loaded = true,
-    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/sideways.vim",
-    url = "https://github.com/AndrewRadev/sideways.vim"
   },
   tabular = {
     loaded = true,

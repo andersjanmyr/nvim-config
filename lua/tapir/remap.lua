@@ -44,10 +44,6 @@ vim.keymap.set("n", "<leader>gp", ":Git push<cr>")
 vim.keymap.set("n", "<leader>gg", ":Ggrep <C-R><C-W>")
 vim.keymap.set("n", "<leader>q", ":sp ~/bin/dotfiles/vim/vim-quick.md<cr>")
 
--- Sideways
-vim.keymap.set("n", "<leader>h", ":SidewaysLeft<cr>")
-vim.keymap.set("n", "<leader>l", ":SidewaysRight<cr>")
-
 -- Replace repeat last substitution to include flags
 vim.keymap.set("n", "&", ":&&<cr>")
 vim.keymap.set("x", "&", ":&&<cr>")

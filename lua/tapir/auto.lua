@@ -9,7 +9,7 @@ vim.api.nvim_create_autocmd(
 vim.api.nvim_create_autocmd(
     "FileType",
     {
-        pattern = { "go" },
+        pattern = { "go", "lua" },
         command = "setlocal nolist noexpandtab"
     }
 )

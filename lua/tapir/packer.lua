@@ -15,6 +15,7 @@ return require('packer').startup(function(use)
         end
     }
     use('nvim-treesitter/nvim-treesitter', {run = ':TSUpdate'})
+    use('nvim-treesitter/nvim-treesitter-textobjects')
     use('mbbill/undotree')
     use('tpope/vim-fugitive')
     use {
@@ -38,7 +39,6 @@ return require('packer').startup(function(use)
             {'rafamadriz/friendly-snippets'},
         }
     }
-    use('AndrewRadev/sideways.vim')
     use('airblade/vim-gitgutter')
     use('andersjanmyr/vim-scratch')
     use('ap/vim-css-color')
