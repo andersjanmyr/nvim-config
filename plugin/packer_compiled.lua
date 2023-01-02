@@ -134,6 +134,11 @@ _G.packer_plugins = {
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/guihua.lua",
     url = "https://github.com/ray-x/guihua.lua"
   },
+  harpoon = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/harpoon",
+    url = "https://github.com/theprimeagen/harpoon"
+  },
   ["lsp-zero.nvim"] = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/lsp-zero.nvim",
