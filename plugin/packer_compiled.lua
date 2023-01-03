@@ -286,6 +286,11 @@ _G.packer_plugins = {
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-sleuth",
     url = "https://github.com/tpope/vim-sleuth"
   },
+  ["vim-strip-trailing-whitespace"] = {
+    loaded = true,
+    path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-strip-trailing-whitespace",
+    url = "https://github.com/axelf4/vim-strip-trailing-whitespace"
+  },
   ["vim-surround"] = {
     loaded = true,
     path = "/Users/anjan9/.local/share/nvim/site/pack/packer/start/vim-surround",
