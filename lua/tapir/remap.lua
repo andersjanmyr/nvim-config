@@ -53,3 +53,4 @@ vim.keymap.set("n",  "<Leader>c", ":TComment<cr>")
 vim.keymap.set("v",  "<Leader>c", ":TComment<cr>")
 
 vim.keymap.set("n", "<leader>u", ":UndotreeToggle<cr>")
+vim.keymap.set("n", "<leader>w", ":StripTrailingWhitespace<cr>")
