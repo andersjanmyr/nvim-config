@@ -13,10 +13,19 @@ vim.api.nvim_create_autocmd(
         command = "setlocal nolist noexpandtab"
     }
 )
+
 vim.api.nvim_create_autocmd(
     "FileType",
     {
         pattern ={ 'css', 'html', 'javascript', 'typescript' },
         command = "setlocal expandtab ts=4 sts=4 sw=4"
+    }
+)
+
+vim.api.nvim_create_autocmd(
+    "BufWritePost",
+    {
+        pattern ={ '*.tf' },
+        command = "TerraformFmt"
     }
 )
