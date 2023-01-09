@@ -20,6 +20,13 @@ lsp.configure('sumneko_lua', {
     }
 })
 
+require('lspconfig').gopls.setup({
+    settings = {
+        gopls = {
+            gofumpt = true
+        }
+    }
+})
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -75,10 +82,3 @@ vim.diagnostic.config({
     virtual_text = true,
 })
 
-require('lspconfig').gopls.setup({
-    settings = {
-        gopls = {
-            gofumpt = true
-        }
-    }
-})
