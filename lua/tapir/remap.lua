@@ -54,3 +54,8 @@ vim.keymap.set("v",  "<Leader>c", ":TComment<cr>")
 
 vim.keymap.set("n", "<leader>u", ":UndotreeToggle<cr>")
 vim.keymap.set("n", "<leader>w", ":StripTrailingWhitespace<cr>")
+
+-- Visual tabbing should stay in visual
+vim.keymap.set("v", ">", ">gv")
+vim.keymap.set("v", "<", "<gv")
+
