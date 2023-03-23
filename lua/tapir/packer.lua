@@ -66,6 +66,7 @@ return require('packer').startup(function(use)
 	use('tpope/vim-surround')
 	use('tpope/vim-unimpaired')
 	use('theprimeagen/harpoon')
+	use('sbdchd/neoformat')
 	use('axelf4/vim-strip-trailing-whitespace')
 	use {
 	  "folke/todo-comments.nvim",

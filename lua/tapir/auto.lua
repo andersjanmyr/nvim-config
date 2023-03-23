@@ -25,6 +25,15 @@ vim.api.nvim_create_autocmd(
 vim.api.nvim_create_autocmd(
     "BufWritePost",
     {
+        pattern = { '*.js', '*.json','*.ts' },
+        command = "Neoformat"
+    }
+)
+
+
+vim.api.nvim_create_autocmd(
+    "BufWritePost",
+    {
         pattern ={ '*.tf' },
         command = "TerraformFmt"
     }
