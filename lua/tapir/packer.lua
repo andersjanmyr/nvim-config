@@ -68,6 +68,7 @@ return require('packer').startup(function(use)
 	use('theprimeagen/harpoon')
 	use('sbdchd/neoformat')
 	use('axelf4/vim-strip-trailing-whitespace')
+    use('jose-elias-alvarez/typescript.nvim')
 	use {
 	  "folke/todo-comments.nvim",
 	  requires = "nvim-lua/plenary.nvim",

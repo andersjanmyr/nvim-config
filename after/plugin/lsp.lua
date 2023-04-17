@@ -27,6 +27,20 @@ require('lspconfig').gopls.setup({
     }
 })
 
+require("typescript").setup({
+    disable_commands = false, -- prevent the plugin from creating Vim commands
+    debug = false, -- enable debug logging for commands
+    go_to_source_definition = {
+        fallback = true, -- fall back to standard LSP definition on failure
+    },
+    server = { -- pass options to lspconfig's setup method
+        on_attach = lsp.on_attach,
+        filetypes = { "typescript" },
+        cmd = { "typescript-language-server", "--stdio" }
+    },
+})
+
+
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
 local cmp_mappings = lsp.defaults.cmp_mappings({
@@ -58,10 +72,10 @@ lsp.set_preferences({
 lsp.on_attach(function(client, bufnr)
   local opts = {buffer = bufnr, remap = false}
 
-  if client.name == "eslint" then
-      vim.cmd.LspStop('eslint')
-      return
-  end
+  -- if client.name == "eslint" then
+  --     vim.cmd.LspStop('eslint')
+  --     return
+  -- end
 
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
@@ -80,4 +94,3 @@ lsp.setup()
 vim.diagnostic.config({
     virtual_text = true,
 })
-
