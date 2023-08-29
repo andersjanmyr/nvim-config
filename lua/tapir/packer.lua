@@ -56,7 +56,6 @@ return require('packer').startup(function(use)
 	use('mattn/gist-vim')
 	use('mileszs/ack.vim')
 	use('phelipetls/vim-jqplay')
-	use('scrooloose/nerdtree')
 	use('ruanyl/vim-gh-line')
 	use('tomtom/tcomment_vim')
 	use('tpope/vim-eunuch')
@@ -69,6 +68,13 @@ return require('packer').startup(function(use)
 	use('sbdchd/neoformat')
 	use('axelf4/vim-strip-trailing-whitespace')
     use('jose-elias-alvarez/typescript.nvim')
+	use {
+        'nvim-tree/nvim-tree.lua',
+		config = function()
+            require("nvim-tree").setup()
+        end
+    }
+    use('nvim-tree/nvim-web-devicons')
 	use {
 	  "folke/todo-comments.nvim",
 	  requires = "nvim-lua/plenary.nvim",

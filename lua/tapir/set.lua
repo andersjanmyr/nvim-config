@@ -1,4 +1,9 @@
---vim.opt.macatsui = false
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+
+-- set termguicolors to enable highlight groups
+-- vim.opt.termguicolors = true
+-- vim.opt.macatsui = false
 vim.opt.timeoutlen = 500 -- the delay before the leader kicks in
 
 vim.opt.background="dark"
@@ -49,3 +54,4 @@ vim.opt.wrap=true
 -- vim.opt.runtimepath.append(os.getenv("HOME") .. "/.vim/bundle/ultisnip-snippets")
 vim.opt.autowrite=true
 vim.g.solarized_termcolors=256
+vim.g.neoformat_try_node_exe = 1
