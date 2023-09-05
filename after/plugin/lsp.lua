@@ -1,4 +1,5 @@
 local lsp = require("lsp-zero")
+local nvim_lsp = require('lspconfig')
 
 lsp.preset("recommended")
 
@@ -19,7 +20,7 @@ lsp.configure('sumneko_lua', {
     }
 })
 
-require('lspconfig').gopls.setup({
+nvim_lsp.gopls.setup({
     settings = {
         gopls = {
             gofumpt = true
@@ -27,12 +28,14 @@ require('lspconfig').gopls.setup({
     }
 })
 
-require("typescript").setup({
+nvim_lsp.tsserver.setup({
     disable_commands = false, -- prevent the plugin from creating Vim commands
     debug = false, -- enable debug logging for commands
     go_to_source_definition = {
         fallback = true, -- fall back to standard LSP definition on failure
     },
+    root_dir = nvim_lsp.util.root_pattern("package.json"),
+    single_file_support = false,
     server = { -- pass options to lspconfig's setup method
         on_attach = lsp.on_attach,
         filetypes = { "typescript" },
