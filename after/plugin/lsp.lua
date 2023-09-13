@@ -28,6 +28,17 @@ nvim_lsp.gopls.setup({
     }
 })
 
+nvim_lsp.pyright.setup{}
+
+nvim_lsp.eslint.setup({
+  on_attach = function(client, bufnr)
+    vim.api.nvim_create_autocmd("BufWritePre", {
+      buffer = bufnr,
+      command = "EslintFixAll",
+    })
+  end,
+})
+
 nvim_lsp.tsserver.setup({
     disable_commands = false, -- prevent the plugin from creating Vim commands
     debug = false, -- enable debug logging for commands
