@@ -1,20 +1,21 @@
-local lsp = require("lsp-zero")
+local lsp = require('lsp-zero').preset({
+    name = 'recommended'
+})
+
 local nvim_lsp = require('lspconfig')
 
-lsp.preset("recommended")
-
 lsp.ensure_installed({
+  'lua_ls',
   'tsserver',
   'eslint',
   'rust_analyzer',
 })
 
--- Fix Undefined global 'vim'
-lsp.configure('sumneko_lua', {
+lsp.configure('lua_ls', {
     settings = {
         Lua = {
             diagnostics = {
-                globals = { 'vim' }
+                 globals = { 'vim' }
             }
         }
     }
