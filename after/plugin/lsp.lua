@@ -24,11 +24,16 @@ require('mason-lspconfig').setup({
       local lua_opts = lsp_zero.nvim_lua_ls()
       require('lspconfig').lua_ls.setup(lua_opts)
     end,
+    phpactor = function()
+      require('lspconfig').phpactor.setup{}
+    end,
   }
 })
 
+
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
+
 
 cmp.setup({
   sources = {
