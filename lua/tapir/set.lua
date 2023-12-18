@@ -58,3 +58,6 @@ vim.opt.wrap=true
 vim.opt.autowrite=true
 vim.g.solarized_termcolors=256
 vim.g.neoformat_try_node_exe = 1
+
+vim.g.python3_host_prog = '/Users/andersjanmyr/.pyenv/versions/neovim3/bin/python'
+
