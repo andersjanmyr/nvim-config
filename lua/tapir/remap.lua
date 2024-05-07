@@ -58,3 +58,5 @@ vim.keymap.set("n", "<leader>w", ":StripTrailingWhitespace<cr>")
 vim.keymap.set("v", ">", ">gv")
 vim.keymap.set("v", "<", "<gv")
 
+-- Copy filename to clipboard
+vim.keymap.set("n", "<leader>g", ':let @+=expand("%")<cr>')
