@@ -9,7 +9,7 @@ local ensure_packer = function()
   return false
 end
 
-local packer_bootstrap = ensure_packer()
+ensure_packer()
 
 require("tapir")
 
