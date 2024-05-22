@@ -7,9 +7,9 @@ return require('packer').startup(function(use)
 		requires = { {'nvim-lua/plenary.nvim'} }
 	}
 	use {
-		'altercation/vim-colors-solarized',
+		'lifepillar/vim-solarized8',
 		config = function()
-			vim.cmd('colorscheme solarized')
+			vim.cmd('colorscheme solarized8')
 			vim.g.solarized_termcolors = 256
 		end
 	}

@@ -256,12 +256,6 @@ _G.packer_plugins = {
     path = "/Users/andersjanmyr/.local/share/nvim/site/pack/packer/start/undotree",
     url = "https://github.com/mbbill/undotree"
   },
-  ["vim-colors-solarized"] = {
-    config = { "\27LJ\2\n`\0\0\3\0\5\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0)\1\0\1=\1\4\0K\0\1\0\25solarized_termcolors\6g\26colorscheme solarized\bcmd\bvim\0" },
-    loaded = true,
-    path = "/Users/andersjanmyr/.local/share/nvim/site/pack/packer/start/vim-colors-solarized",
-    url = "https://github.com/altercation/vim-colors-solarized"
-  },
   ["vim-css-color"] = {
     loaded = true,
     path = "/Users/andersjanmyr/.local/share/nvim/site/pack/packer/start/vim-css-color",
@@ -317,6 +311,12 @@ _G.packer_plugins = {
     path = "/Users/andersjanmyr/.local/share/nvim/site/pack/packer/start/vim-sleuth",
     url = "https://github.com/tpope/vim-sleuth"
   },
+  ["vim-solarized8"] = {
+    config = { "\27LJ\2\na\0\0\3\0\5\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0)\1\0\1=\1\4\0K\0\1\0\25solarized_termcolors\6g\27colorscheme solarized8\bcmd\bvim\0" },
+    loaded = true,
+    path = "/Users/andersjanmyr/.local/share/nvim/site/pack/packer/start/vim-solarized8",
+    url = "https://github.com/lifepillar/vim-solarized8"
+  },
   ["vim-strip-trailing-whitespace"] = {
     loaded = true,
     path = "/Users/andersjanmyr/.local/share/nvim/site/pack/packer/start/vim-strip-trailing-whitespace",
@@ -340,18 +340,18 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
+-- Config for: vim-solarized8
+time([[Config for vim-solarized8]], true)
+try_loadstring("\27LJ\2\na\0\0\3\0\5\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0)\1\0\1=\1\4\0K\0\1\0\25solarized_termcolors\6g\27colorscheme solarized8\bcmd\bvim\0", "config", "vim-solarized8")
+time([[Config for vim-solarized8]], false)
 -- Config for: todo-comments.nvim
 time([[Config for todo-comments.nvim]], true)
 try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18todo-comments\frequire\0", "config", "todo-comments.nvim")
 time([[Config for todo-comments.nvim]], false)
--- Config for: vim-colors-solarized
-time([[Config for vim-colors-solarized]], true)
-try_loadstring("\27LJ\2\n`\0\0\3\0\5\0\t6\0\0\0009\0\1\0'\2\2\0B\0\2\0016\0\0\0009\0\3\0)\1\0\1=\1\4\0K\0\1\0\25solarized_termcolors\6g\26colorscheme solarized\bcmd\bvim\0", "config", "vim-colors-solarized")
-time([[Config for vim-colors-solarized]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n7\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then
