@@ -30,6 +30,14 @@ require('mason-lspconfig').setup({
   }
 })
 
+require('lspconfig').sqls.setup{
+    on_attach = function(client, bufnr)
+        local sqls = require('sqls')
+        sqls.on_attach(client, bufnr)
+        vim.keymap.set("n", "<leader>x", ":SqlsExecuteQuery<cr>")
+        vim.keymap.set("v", "<leader>x", ":SqlsExecuteQuery<cr>")
+    end
+}
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
